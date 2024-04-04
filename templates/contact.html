@@ -1,0 +1,25 @@
+{% include "header.html" %}
+
+<div class="container my-5 rounded-3 shadow-lg p-lg-5">
+  
+        <img src="https://png.pngtree.com/png-vector/20220630/ourmid/pngtree-email-address-background-blank-business-png-image_5576245.png" class="pb-3" height="100px">
+        
+        <form action="/sendemail" method="post">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email_box">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="text_box" rows="8"></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary mb-3">Send</button>
+        </form>
+
+    </div>
+  </div>
+
+  
+</div>
+
+{% include "footer.html" %}
